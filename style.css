@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@font-face {
+	font-family: 'Ubuntu';
+	src: url(./assets/fonts/Ubuntu-Bold.woff2) format('woff2'),
+		 url(./assets/fonts/Ubuntu-Bold.woff) format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Ubuntu';
+	src: url(./assets/fonts/Ubuntu-Italic.woff2) format('woff2'),
+		 url(./assets/fonts/Ubuntu-Italic.woff) format('woff');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Ubuntu';
+	src: url(./assets/fonts/Ubuntu-Regular.woff2) format('woff2'),
+		 url(./assets/fonts/Ubuntu-Regular.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	font-family: Ubuntu, sans-serif;
+	font-weight: normal;
+	line-height: 1.6;
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.header {
+	height: 120px;
+	padding: 20px 0px 20px 0px;
+	background-color: #1b9fc7;
+}
+
+.nav-list {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	list-style: none;
+}
+
+.nav-link {
+	padding: 0 20px;
+	line-height: 50px;
+	font-size: 1.2em;
+	color: #0000ff;
+	text-decoration: none;
+	transition: .3s;
+}
+
+.nav-link:hover {
+	padding-right: 30px;
+	color: blueviolet;
+}
+
+.nav-link:hover::before {
+	content: "\2193";
+	padding: 0 5px;
+	color: blueviolet;
+}
+
+.nav-link:hover::after {
+	content: "\2193";
+	padding: 0 5px;
+	color: blueviolet;
+
+}
+
+.my-foto {
+	width: 240px;
+	border: 2px solid #1b9fc7;
+	border-radius: 50%;
+}
+
+.name {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.greeting-text {
+	font-size: 150%;
+}
+
+.greeting-title,
+.greeting-text {
+	font-family: 'Zen Dots', sans-serif;
+}
+
+.section-title {
+	line-height: 1;
+	color: #5f5e5e;
+}
+
+.wrap {
+	padding: 0 20px;
+}
+
+.table {
+	display: table;
+	border-spacing: 20px;
+}
+
+.foto-name,
+.main-info,
+.scills-code {
+	display: table-row;
+}
+
+.aside-table-sell,
+.name,
+.main-text,
+.code {
+	display: table-cell;
+	padding: 0px 20px 0px 20px;
+	border-bottom: 1px solid #000000;
+}
+
+.contacts {
+	max-width: 300px;
+}
+
+.contacts-item {
+	position: relative;
+	padding-left: 20px;
+	/* margin-left: -50px; */
+}
+
+.contacts-item::before {
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 5px;
+   width: 16px;
+   height: 16px;
+   margin-right: 50px;
+   background-size: 16px 16px;
+}
+
+.contacts-item:nth-child(1)::before {
+	background-image: url(./assets/img/icons/mail.ico);
+}
+
+.contacts-item:nth-child(2)::before {
+	background-image: url(./assets/img/icons/telegram_thin.ico);
+}
+
+.contacts-item:nth-child(3)::before {
+	background-image: url(./assets/img/icons/whatsapp.ico);
+}
+
+.contacts-item:nth-child(4)::before {
+	background-image: url(./assets/img/icons/mail.ico);
+}
+
+.contacts-item:nth-child(5)::before {
+	background-image: url(./assets/img/icons/LinkedIn_thin.ico);
+}
+
+.contacts-list,
+.sciils-list, li {
+   margin: 0;
+   padding: 0;
+	list-style: none;
+}
+
+.scills-item {
+	position: relative;
+	padding-left: 30px;
+	/* margin-left: -50px; */
+}
+.main-text {
+	opacity: 0.8;
+}
+
+.scills-item::before {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 10px;
+	top: 5px;
+	border: 1px solid #5e5e5e;
+	border-radius: 50%;
+}
+
+.code {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.codewars {
+	display: inline-block;
+}
+
+.knowlege {
+	padding-bottom: 10px;
+}
+.footer {
+	height: 120px;
+	background-color: #1b9fc7;
+}
+
+.footer__set {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 120px;
+}
+
+.my-link {
+   display: inline-block;
+	padding-left: 30px;
+	color: #0000ff
+}
+
+.year {
+	display: inline-block;
+	font-size: 1.2em;
+	color: #ffffff;
+}
+
+.logo {
+	display: inline-block;
+	width: 120px;
+	padding-right: 30px;
+}
