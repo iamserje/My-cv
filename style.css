@@ -215,6 +215,12 @@ body {
 .knowlege {
 	padding-bottom: 10px;
 }
+
+.sertificat {
+   width: 350px;
+   height: 246px;
+}
+
 .footer {
 	height: 120px;
 	background-color: #1b9fc7;
