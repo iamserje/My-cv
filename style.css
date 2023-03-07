@@ -47,7 +47,9 @@ body {
 
 .header {
 	height: 120px;
+	/* m => p */
 	padding: 20px 0px 20px 0px;
+	/* text-align: center; */
 	background-color: #1b9fc7;
 }
 
@@ -56,6 +58,11 @@ body {
 	justify-content: flex-end;
 	align-items: center;
 	list-style: none;
+}
+
+.nav-item {
+	/* display: inline-block;
+	width: 130px; */
 }
 
 .nav-link {
@@ -95,6 +102,10 @@ body {
 	text-align: center;
 	vertical-align: middle;
 }
+
+/* .greeting-title {
+  padding: 0px 0px 0px 0px;
+} */
 
 .greeting-text {
 	font-size: 150%;
@@ -141,51 +152,52 @@ body {
 .contacts-item {
 	position: relative;
 	padding-left: 20px;
-	/* margin-left: -50px; */
+	margin-left: -50px;
 }
 
 .contacts-item::before {
-   content: "";
-   position: absolute;
-   left: 0;
-   top: 5px;
-   width: 16px;
-   height: 16px;
-   margin-right: 50px;
-   background-size: 16px 16px;
+	content: "";
+	position: absolute;
+	left: -5px;
+	top: 0px;
+	width: 16px;
+	height: 16px;
+	/* border: 1px solid #5e5e5e;
+	border-radius: 50%; */
+	background-image: url(assets/img/icons/discord.ico);
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .contacts-item:nth-child(1)::before {
-	background-image: url(./assets/img/icons/mail.ico);
+	background-image: url(assets/img/icons/mail.ico);
 }
 
 .contacts-item:nth-child(2)::before {
-	background-image: url(./assets/img/icons/telegram_thin.ico);
+	background-image: url(assets/img/icons/telegram_thin.ico);
 }
 
 .contacts-item:nth-child(3)::before {
-	background-image: url(./assets/img/icons/whatsapp.ico);
+	background-image: url(assets/img/icons/whatsapp.ico);
 }
 
 .contacts-item:nth-child(4)::before {
-	background-image: url(./assets/img/icons/mail.ico);
+	background-image: url(assets/img/icons/mail.ico);
 }
 
 .contacts-item:nth-child(5)::before {
-	background-image: url(./assets/img/icons/LinkedIn_thin.ico);
+	background-image: url(assets/img/icons/LinkedIn_thin.ico);
 }
 
 .contacts-list,
-.sciils-list, li {
-   margin: 0;
-   padding: 0;
+.sciils-list {
 	list-style: none;
 }
 
 .scills-item {
 	position: relative;
 	padding-left: 30px;
-	/* margin-left: -50px; */
+	margin-left: -50px;
 }
 .main-text {
 	opacity: 0.8;
@@ -214,11 +226,6 @@ body {
 
 .knowlege {
 	padding-bottom: 10px;
-}
-
-.sertificat {
-   width: 350px;
-   height: 246px;
 }
 
 .footer {
