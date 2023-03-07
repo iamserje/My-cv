@@ -2,8 +2,6 @@
 
 ---
 
-[Link to CV in MD](https://iamserje.github.io/rsschool-cv/cv)
+https://iamserje.github.io/rsschool-cv/cv
 
----
-
-[Link to CV in html](https://iamserje.github.io/rsschool-cv/)
+https://iamserje.github.io/rsschool-cv/
