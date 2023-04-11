@@ -151,7 +151,7 @@ body {
 
 .contacts-item {
 	position: relative;
-	padding-left: 30px;
+	padding-left: 20px;
 	margin-left: -50px;
 }
 
@@ -160,8 +160,8 @@ body {
 	position: absolute;
 	left: -5px;
 	top: 0px;
-	width: 24px;
-	height: 24px;
+	width: 16px;
+	height: 16px;
 	/* border: 1px solid #5e5e5e;
 	border-radius: 50%; */
 	background-image: url(assets/img/icons/discord.ico);
@@ -199,6 +199,9 @@ body {
 	padding-left: 30px;
 	margin-left: -50px;
 }
+.main-text {
+	opacity: 0.8;
+}
 
 .scills-item::before {
 	content: "";
@@ -211,36 +214,40 @@ body {
 	border-radius: 50%;
 }
 
+.code {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
 .codewars {
 	display: inline-block;
-	width: 200px;
-	vertical-align: top;
 }
 
-.python {
-	display: inline-block;
-	margin-top: -20px;
+.knowlege {
+	padding-bottom: 10px;
 }
 
-h3 {
-	margin-left: 120px;
-}
 .footer {
 	height: 120px;
 	background-color: #1b9fc7;
 }
 
+.footer__set {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 120px;
+}
+
 .my-link {
    display: inline-block;
-	padding: 30px 0px;
-	margin: 0px 0px 0px 20px;
+	padding-left: 30px;
 	color: #0000ff
 }
 
 .year {
 	display: inline-block;
-	padding: 30px 0px;
-	margin: 0px 0px 0px 30%;
 	font-size: 1.2em;
 	color: #ffffff;
 }
@@ -248,7 +255,5 @@ h3 {
 .logo {
 	display: inline-block;
 	width: 120px;
-	padding: 30px 0px;
-	margin: 0px 0px 0px 40%;
-	text-align: right;
+	padding-right: 30px;
 }
