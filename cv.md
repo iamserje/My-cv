@@ -43,6 +43,7 @@
 
 
 And this is binary search:
+
 ```
 function binarySearchRecur(arr, el, start, last) {
    let middle = Math.floor((start + last) / 2);
@@ -64,4 +65,4 @@ function binarySearchRecur(arr, el, start, last) {
 
 ### Language:
 
-**English A-2**
+**English B-1**
