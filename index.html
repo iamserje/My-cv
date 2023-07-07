@@ -33,7 +33,7 @@
             <div class="name">
               <h1 class="greeting-title">Sierge Voronkov</h1>
               <p class="greeting-text">
-                Junior Frontend Student
+                Junior Developer
               </p>
             </div>
           </div>
@@ -74,12 +74,12 @@
             <aside class="scills aside-table-sell">
               <h2 class="section-title" id="Skills">Skills:</h2>
               <ul class="sciils-list">
-                <li class="scills-item">HTML, CSS</li>
-                <li class="scills-item">JavaScript</li>
+                <li class="scills-item">Python</li>
+                <li class="scills-item">Linux</li>
                 <li class="scills-item">Git</li>
                 <li class="scills-item">VScode</li>
-                <li class="scills-item">Linux</li>
-                <li class="scills-item">Python</li>
+                <li class="scills-item">HTML, CSS</li>
+                <li class="scills-item">JavaScript</li>
               </ul>
               <div class="language">
                 <h2 class="section-title">Language:</h2>
@@ -93,26 +93,48 @@
                 <a href="https://www.codewars.com/users/rsschool_4a5d56af4c8b721d/completed_solutions">Katas on the codewars</a>
                 <code>
                   <pre>
-      And this is binary search:
-function binarySearchRecur(arr, el, start, last) {
-   let middle = Math.floor((start + last) / 2);
-   console.log(el, start,middle,last)
-   count += 1;
-   if (el === arr[middle]) {
-      return middle;
-   }
-   if (el < arr[middle]) {
-      return binarySearchRecur(arr, el, start, middle - 1);
-   } else {
-    return binarySearchRecur(arr, el, middle + 1, last);
-   }
-}
+
+  tabl = [[0] * size for i in range(size)]
+  tabl[0] = [(col + 1) for col in range(size)] # номера с единицы, по
+  digit = size # это очередная цифра
+  y = 0; x = size - 1 # x и y - (координаты) а по сути индексы для итераций. мсейчас мы здесь
+  razmer = size # (размерность) длина прохода после каждых двух  циклов(уменьшаем на 1)
+  while digit < size * size:
+      razmer -= 1
+      for i in range(razmer): # идем по вертикали
+          y += 1
+          digit += 1
+          tabl[y][x] = digit
+      for i in range(razmer): # идем по горизонтали
+          x -= 1
+          digit += 1
+          tabl[y][x] = digit
+      if digit >= size * size:
+          break
+      razmer -= 1
+      for i in range(razmer):
+          y -= 1
+          digit += 1
+          tabl[y][x] = digit
+      for i in range(razmer):
+          x += 1
+          digit += 1
+          tabl[y][x]
+  for stroka in tabl:
+      print('\t'.join(map(str, s)))
 
                   </pre>
                 </code>
               </div>
               <div class="knowlege">
                 <h2 class="section-title">Courses:</h2>
+
+                <a href="https://www.hackerrank.com/">
+                  <img src="./assets/img/python_basic.jpg" width="350px" height="246px" alt="Course on RS Chool">
+                </a>
+                <a href="https://stepik.org/lesson/488831/step/1?auth=login&unit=480067">
+                  <img src="./assets/img/stepik-cert.jpg" width="350px" height="246px" alt="Course on RS Chool">
+                </a>
                 <a href="https://app.rs.school/">
                   <img src="./assets/img/sertificat.jpg" width="350px" height="246px" alt="Course on RS Chool">
                 </a>
