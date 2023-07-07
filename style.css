@@ -153,6 +153,10 @@ body {
 	top: 0px;
 	width: 16px;
 	height: 16px;
+
+	/* border: 1px solid #5e5e5e;
+	border-radius: 50%; */
+
 	background-image: url(assets/img/icons/discord.ico);
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -216,10 +220,12 @@ body {
 .knowlege {
 	padding-bottom: 10px;
 }
+
 .sertificate {
 	width: 350px;
 	height: 246px;
 }
+
 
 .footer {
 	height: 120px;

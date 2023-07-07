@@ -1,5 +1,5 @@
 # Sierge Voronkov
-### Junior Frontend Student
+### Junior Developer
 
 ---
 
@@ -28,12 +28,12 @@
 
 ### Skills:
 
-* HTML, CSS
-* JavaScript
+* Python
+* Linux*
 * Git
 * VScode
-* Linux
-* Python
+* HTML, CSS
+* JavaScript
 
 ---
 
